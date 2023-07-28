@@ -1,0 +1,354 @@
+@font-face {
+  font-family: nhm3;
+  src: url("Nohemi-SemiBold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:nhm3;
+
+}
+
+body {
+  background-color: rgb(11,7,9);
+  overflow-x: hidden;
+}
+   
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+#logo {
+  width:160px;
+  margin-left:1.5rem;
+  margin-top:0.2rem;
+}
+
+.register{
+
+    display:block ;
+    width:40%;
+    height: 50%;
+
+    /* background-color: rgb(216, 7, 216); */
+    z-index: 3;
+    position: absolute;
+    top:20%;
+    left:10%;
+    /* frameborder="0" */
+    background: rgba(255, 255, 255, 0.097);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.623);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+
+/* border-radius: 15%; */
+}
+ .video {
+    width:28%;
+    height: 70%;
+    position:absolute;
+    background: rgba(255, 255, 255, 0.097);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    top:35%;
+    left:45%;
+    z-index:2;
+} 
+
+
+
+
+.logo {
+  width:180px;
+  position:absolute;
+  top:2%;
+  left:3%;
+}
+
+.sidenav {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:nowrap;
+    align-content: center;
+    
+    height: 50%; /* Full-height: remove this if you want "auto" height */
+    width: 70px; /* Set the width of the sidebar */
+    position: fixed; 
+    z-index: 1; /* Stay on top */
+    top: 20%; /* Stay at the top */
+    right: 20px;
+    gap:15%;
+    /* margin-top:auto; */
+    /* background-color: #111; Black */
+     /* Disable horizontal scroll */
+    padding-top: 20px;
+    border-radius:60px;
+background: rgba(255, 255, 255, 0.13);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+/* border: 0.1px solid rgba(255, 255, 255, 0.66); */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 25px;
+    color: #dad2d2;
+    display: block;
+
+    /* border-radius:5px; */
+    
+  }
+ 
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: white;
+    border-radius: 999px;
+    padding:12px;
+    background-color: #7240ce;
+  }
+  .sidenav a:hover path {
+    fill:  white;
+  }
+  
+ 
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  .tooltip {
+    position: absolute;
+    /* top: 120px; */
+    margin-top: -30px;
+    right:80px;
+    /* background: aliceblue; */
+    padding: 0.5rem 1.5rem;
+    /* display: block; */
+    border-radius: 7px;
+    font-weight: 600;
+    background: rgb(60,33,110);
+    background: linear-gradient(90deg, rgba(60,33,110,1) 0%, rgba(114,64,206,1) 100%);
+    z-index: 3;
+    color: white;
+    transition:7ms;
+    font-family: 'Istok Web';
+    font-size:1.1rem;
+    opacity:0;
+    
+  }
+
+  @media (max-width: 575.98px) { 
+    .toggle__menu-open {
+      /* position: absolute; */
+      position: sticky;
+      left:40px ;
+      margin-right:40px;
+      top: 60px;
+      display: flex;
+      justify-content: flex-end;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      
+    }
+    .toggle__menu-close {
+      position: sticky;
+      margin-left: 72%;
+      top: 0%;
+      /* bottom */
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .sidenav {
+      padding-top:10px;
+      position: fixed;
+      bottom: 0px;
+      bottom: -10%;
+      opacity: 0;
+      /* bottom:0px; */
+      margin-top:110px;
+      left: 0px;
+      flex-direction: row;
+      width: 99%;
+      height:80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+
+#typed{
+  font-size:1.9rem!important;
+}
+
+#register {
+  width: 68%!important;
+  font-size:1.2rem!important;
+}
+
+  .tooltip{
+
+  }
+}
+
+
+   @media (min-width: 576px) {
+    .toggle__menu-open {
+      display: none;
+    }
+    .toggle__menu-close {
+      display: none;
+    }
+  }
+  
+
+  /* .icons:nth-child(1) .tooltip {
+    top:50%;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+  section.our_identity {
+    padding: 40px 20px;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+  }
+  
+  .identity-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .frosh-heading {
+    font-size: 10rem;
+    font-family: "LemonMilk";
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .frosh-heading span {
+    width: 20%;
+    text-align-last: center;
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+  .identity-content {
+    display: flex;
+    padding: 2rem;
+  }
+  
+  .identity-content .text {
+    padding: 0 1rem;
+    width: 20%;
+  }
+  .identity-content .text h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .identity-content .text p {
+    font-size: 1rem;
+    /* font-family: "Poppins"; */
+    text-align: justify;
+    text-justify: inter-word;
+    color: #7240ce;
+    padding: 0.5rem;
+  }
+
+  h4{
+    color:white;
+  }
+
+
+  #typed {
+    color:white;
+    position: absolute;
+    top:45%;
+    left:9%;
+    font-size:3rem;
+    /* font-family: Comic 'Gill Sans',  sans-serif; */
+  }
+
+ 
+  #register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Istok Web';
+    top: 56%;
+    left: 9%;
+    width: 30%;
+    height: 2.5em;
+    font-weight: 10px;
+    background: #7240ce;
+    /* border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px); */
+    /* border: 0.25px solid rgba(150, 150, 150, 0.5); */
+    color: white;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    /* padding:20px; */
+    border-radius: 10px;
+    font-size: 1.5rem;
+    letter-spacing:1px;
+    /* border:white solid 2px; */
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: -15px!important;}
+    .sidenav a {font-size: 18px;}
+  }

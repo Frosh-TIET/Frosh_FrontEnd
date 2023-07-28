@@ -1,0 +1,274 @@
+:root{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+  * {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-image: url(2474216.jpg);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+    ;
+
+  }
+  
+  body{
+    height: 100%;
+    background-image: url(/static/back.gif);
+  }
+  
+  .hero-section{
+    align-items: flex-start;
+    /* background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%); */
+    display: flex;
+    background-image: url(/static/back.gif);`
+    min-height: 100%;
+    justify-content : center;
+    padding : var(--spacing-xxl) var(--spacing-l);
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+    list-style: none;
+    position: relative;
+    margin:0.2vh;
+    /* background-image: inherit;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+    filter: blur(10px); */
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 90%;
+    width: 70%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur (10px);  
+   box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.037);
+   border:5px solid rgba(255, 255, 255, 0.180);
+   border-radius:9px;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+
+
+
+  .flip > .front, .flip > .back {
+    display: block;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    
+}
+.flip > .front {
+    transform: rotateY(0deg);
+    margin-left:5%;
+    /* background: linear-gradient (135deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); */
+    
+
+  
+}
+.flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transform: scale(1.05) translateZ(0);
+    border-radius: 10px;
+}
+
+ .flip > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    
+    padding: 1em 2em;
+    background: #313131;
+    background-image: url(rm218-bb-07.jpg);
+    border-radius: 10px;
+}
+ .flip > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+
+}
+.flip > .back h2 {
+    margin-top: 20px;
+}
+.icon {
+    position: relative;
+    background-color:rgb(33,37,41);
+    border-radius: 50%;
+    padding: 8px;
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* margin-right:10px!important; */
+  }
+  .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  icon:hover span, .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instagram:hover, .instagram:hover .tooltip, .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+
+
+
+  /* .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+   */
+  .card:hover > .card:not(:hover) .card__background  {
+    filter: brightness(0.5) saturate(3) contrast(1.2) blur(20px);
+    /* background: red; */
+
+  }
+  .bottom {
+    width:100%;
+    background-color: #313131;
+    display: block;
+  }
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+
+.card__background::after {
+    background-color: black;
+    display: block;
+    width: 100%;
+}
+
+  .card__heading {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-lighter);
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    /* word-spacing: 100vw; */
+  }
+
+
+
+.navbar {
+    width:100%;
+    height: 100px;
+    background-color:black;
+    display:block;
+}
+

@@ -1,0 +1,53 @@
+.about-section {
+    padding: 3rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-right: 2rem;
+  }
+  .line {
+    width: 100%;
+    background-color: #FF4F00;
+    height: 2px;
+    margin-top: 1rem;
+  }
+  .about-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 3rem;
+  }  
+  .about-section h3 {
+    /* font-family: "BebasNeue"; */
+    padding-left: 0;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 30px;
+    margin-top: 5rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+  }
+  .navig-para {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  

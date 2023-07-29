@@ -1,7 +1,12 @@
 
+@font-face {
+  font-family: nhm3;
+  src: url(/fonts/Nohemi-Regular.otf);
+}
 .box, header {
     max-width: 1140px;
     margin: 2em auto;
+    font-family: nhm3b;
   }
   .box {
     display: flex;
@@ -15,7 +20,7 @@
     flex-direction: column;
     flex: 0 calc(20% - 1.2em);
     /* background-color: white; */
-    background:url(../hello5/82a7d88a238858264176e65ae184eee8_w200.webp);
+    background:url(/static/82a7d88a238858264176e65ae184eee8_w200.webp);
     /* background-repeat: no-repeat; */
     background-position: center;
     background: cover;
@@ -30,7 +35,7 @@
   }
   
   .item:hover {
-    box-shadow: 0 0 20px rgb(198, 5, 198);
+    box-shadow: 0 0 20px #7240ce
     /* transform: rotate(1deg); */
   }
   
@@ -49,12 +54,22 @@
   
   .item label {
     font-size: 40px;
+    font-family: nhm3;
     color:white;
     position: relative;
     justify-content: center;
     text-align: center;
     align-items: center;
   }
+  .item a{
+    font-size: 40px;
+    color : white;
+  }
+  .item a.item:hover{
+    font-size: 40px;
+    color : white;
+  }
+
   section {
     height: auto;
     padding: 3rem;
@@ -76,8 +91,8 @@
     font-size: 70px;
     text-transform: capitalize;
     margin-bottom: 0.5rem;
-    color: rgb(198, 5, 198);
-    text-align: center;
+    color: #7240ce;
+    text-align : center;
   }
   .right-side p {
     font-size: 20px;
@@ -89,7 +104,7 @@
   }
   .line {
     width: 100%;
-    background-color: rgb(198, 5, 198);
+    background-color: #7240ce;
     height: 2px;
     margin-top: 1rem;
   }
@@ -153,3 +168,91 @@
     color: #ffffff;
   }
   
+  .start {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+  }
+  
+  .inner-container {
+    width: 100vw;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: transparent;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+  }
+  .inner-container .inner-inner-container {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 2px solid #fff;
+    /* border-left: 2px solid #fff; */
+    /* padding: 20px; */
+  }
+  
+  .top-section h1 {
+    font-size: 4.0rem;
+    color: #fff;
+    font-family: "bm";
+    font-weight: heavy;	
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .top-section p {
+    padding: 0.5rem 0px;
+    font-family: "Neutral Face";
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding-left: 2px;
+  }
+  .inner-container:hover .top-section h1 {
+    transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    color: #7240ce;
+  }
+  .inner-container:hover .top-section p {
+    transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    color: #7240ce;
+  }
+  
+  .inner-container-1:hover {
+    background-image: url(../Images/start.gif);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  
+    /* background-color: #fff; */
+  }
+  
+  .inner-container-2:hover {
+    background-image: url('/static/200w.webp')
+  }
+  
+  .inner-container-3:hover {
+    background-image: url('/static/black-hole-icegif-7.gif')
+  }
+  
+  .inner-container-4:hover {
+    background-image: url('/static/start4.gif');
+    /* background-color: #fff; */
+  }
+  
+  section .start_section {
+    padding-bottom: 0rem;
+  }
+  
+  /* .vertical_line {
+    background-color: #fff;
+    height: 100%;
+    width: 10px;
+  } */

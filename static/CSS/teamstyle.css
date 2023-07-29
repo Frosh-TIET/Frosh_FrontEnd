@@ -235,7 +235,7 @@
   }
   
   .inner-container-2:hover {
-    background-image: url('/static/200w.webp')
+    background-image: url('/static/back2ndd.gif')
   }
   
   .inner-container-3:hover {
@@ -256,3 +256,13 @@
     height: 100%;
     width: 10px;
   } */
+
+  @media (max-width:575.98px) {
+    .box{
+      flex-direction: column;
+      
+    }
+    .item {
+      left:0px!important;
+    }
+  }

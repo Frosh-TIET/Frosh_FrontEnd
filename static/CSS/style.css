@@ -11,7 +11,7 @@
   }
   @font-face {
     font-family: nhm3;
-    src: url("/fonts/Nohemi-SemiBold.otf");
+    src: url("/fonts/Nohemi-Bold.otf");
   }
 
  
@@ -30,6 +30,7 @@
   
   body{
     height: 100%;
+    
   }
   
   
@@ -41,7 +42,8 @@
     /* background-size: ; */
     display: flex;
     min-height: 100%;
-    font-size: ;
+    font-size:10 ;
+    font-family: nhm3;
     justify-content: center;
     padding: var(--spacing-xxl) var(--spacing-l);
   }

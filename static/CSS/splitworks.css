@@ -1,3 +1,4 @@
+
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
@@ -21,27 +22,30 @@ body {
   background-image: url(/static/back.gif);
 }
 .page-content {
-  display: flex;
-  flex-direction: row;
+  display: flex ;
+  flex-direction: column ;
   grid-gap: 1rem;
   padding: 1rem;
   max-width: 1024px;
   margin: 0 auto;
 
 }
-@media (min-width: 600px) {
+@media (max-width: 575.98px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
 }
 @media (min-width: 800px) {
   .page-content {
     grid-template-columns: repeat(4, 1fr);
+    flex-direction: row;
   }
 }
 .card {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
@@ -49,7 +53,7 @@ body {
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
-  font-family: 'Istok Web';
+  font-family: nhm1 ;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
@@ -60,6 +64,7 @@ body {
 .card:before {
   content: '';
   position: absolute;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,6 +78,7 @@ body {
   content: '';
   display: block;
   position: absolute;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -131,7 +137,7 @@ body {
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
-@media (hover: hover) and (min-width: 600px) {
+@media (hover: hover) and (max-width: 575.98px) {
   .card:after {
     transform: translateY(0);
   }

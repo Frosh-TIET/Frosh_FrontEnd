@@ -10,6 +10,8 @@
 
 body {
   font-size: 1rem;
+  font-family: nhm1;
+
 }
 
 .flex-slider {
@@ -22,10 +24,12 @@ body {
   min-height: 100vh;
   counter-reset: slide;
   font-size: 36px;
+  background-image: url('/static/2474216.jpg ')
 }
 .flex-slider p{
   font-size: 60px;
-  color: #7240ce
+  color: #7240ce;
+ 
 }
 
 @media (max-width: 40em) {

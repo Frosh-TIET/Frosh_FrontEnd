@@ -226,7 +226,7 @@
   }
   
   .inner-container-1:hover {
-    background-image: url(../Images/start.gif);
+    background-image: url(/static/socitiesgif.gif);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@
   }
   
   .inner-container-2:hover {
-    background-image: url('/static/back2ndd.gif')
+    background-image: url('/static/636_AdobeExpress.gif')
   }
   
   .inner-container-3:hover {
@@ -243,7 +243,7 @@
   }
   
   .inner-container-4:hover {
-    background-image: url('/static/start4.gif');
+    background-image: url('/static/video__360p__AdobeExpress\ \(1\).gif');
     /* background-color: #fff; */
   }
   

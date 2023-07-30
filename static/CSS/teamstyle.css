@@ -10,6 +10,7 @@
   }
   .box {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     column-gap: 2em;
     row-gap: 2em;
@@ -27,7 +28,7 @@
     padding: 1.6em;
     border-radius: 10px;
     line-height: 1.6;
-    left: 230px;
+    /* left: 230px; */
     /* box-shadow: 0 0 10px purple; */
     /* transition: 200ms ease-in; */
     /* transform: perspective(600px) rotateY(-8deg); */

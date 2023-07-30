@@ -168,18 +168,19 @@ document.addEventListener('DOMContentLoaded', function() {
       element.style.top= '50px'; // Change this line to apply the desired style
       element.style.width="30%";
       // Add more style changes as needed
-      element.textContent="Register!";
+      element.textContent="Register";
     } else if (window.innerWidth < 576 && window.scrollY < 424) {
       // Apply a different set of styles when the user has scrolled back to the top and the width is less than 576px
       element.style.position = 'absolute'; // Change this line to apply the new desired style
       element.style.top = '53%'; // Change this line to apply the new desired style
       element.style.width = '68%';
       // Add more style changes as needed for the "scrolled back to top" state
-      element.textContent="Register for our Event!";
+      element.textContent="Register for our Event";
     } else {
       // Reset the style when the condition is not met
-      element.style.backgroundColor = ''; // Reset the background color
-      element.style.color = ''; // Reset the text color
+      element.style.position = 'absolute'; // Reset the background color
+      element.style.top = '53%';
+      element.style.width='30%';// Reset the text color
       // Reset other styles as needed
     }
   }

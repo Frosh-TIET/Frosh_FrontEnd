@@ -33,7 +33,9 @@
     
   }
   
-  
+.team_role{
+  margin-top:80px;
+}  
   .hero-section{
     flex-direction: column;
     
@@ -51,6 +53,7 @@
   .card-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin-left:auto;
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
@@ -58,7 +61,10 @@
     justify-items: center;
   }
   
-  @media(min-width: 540px){
+
+
+
+  @media(min-width: 576px){
     .card-grid{
       grid-template-columns: repeat(2, 1fr); 
     }
@@ -68,18 +74,25 @@
     .card-grid{
       grid-template-columns: repeat(5, 0.8fr); 
     }
-    #core {
+    #core,#osc {
       grid-template-columns: repeat(4, 0.8fr); 
     }
+   
   }
   
-  .card{
+  .cards{
     list-style: none;
     position: relative;
-    width:105%
+    width:85%;
+    margin-top:30px;
   }
-  
-  .card:before{
+  @media(min-width: 960px){
+    .cards-faculty {
+      width:105%!important;
+    }
+
+  }
+  .cards:before{
     content: '';
     display: block;
     padding-bottom: 140%;
@@ -106,7 +119,7 @@
       transform 200ms linear;
   }
   
-  .card:hover .card__background{
+  .cards:hover .card__background{
     transform: scale(1.05) translateZ(0);
   }
   
@@ -121,12 +134,7 @@
     top: 0;
   }
   
-  .card__category{
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-s);
-    text-transform: uppercase;
-  }
+
   
   .team_role{
     font-size: 6em;
@@ -149,15 +157,15 @@
     font-family: nhm3;
   }
 
-  #core .card:nth-child(2n) .card__heading {
+  #core .cards:nth-child(2n) .card__heading {
     color: rgb(253, 198, 253);
     font-family: nhm3;
   }
-  #core .card:nth-child(3n) .card__heading {
+  #core .cards:nth-child(3n) .card__heading {
     color: rgb(255, 137, 255);
     font-family: nhm3;
   }
-  #core .card:nth-child(4n) .card__heading {
+  #core .cards:nth-child(4n) .card__heading {
     color: rgb(255, 99, 255)!important;
     font-family: nhm3;
   }

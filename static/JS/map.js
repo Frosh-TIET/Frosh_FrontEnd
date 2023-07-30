@@ -98,7 +98,7 @@ function setupMap(center) {
   map.on("load", () => {
     // Add an image to use as a custom marker
     map.loadImage(
-      "pointer.png",
+      "/static/pointer.png",
       (error, image) => {
         if (error) throw error;
         map.addImage("custom-marker", image);

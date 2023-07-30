@@ -1,0 +1,76 @@
+
+
+.btn-primary{
+    background-color: #7240ce!important;
+    height:3rem;
+    border-radius:16px;
+    margin-left:15px;
+    /* position: absolute; */
+}
+
+
+.navbar {
+    background: rgba(255, 255, 255, 0.13);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+padding-top:-20px;
+position:fixed!important;
+}
+
+.tooltip {
+    position: absolute;
+}
+
+.navbar-nav{
+    gap:0.1rem;
+}
+
+svg {
+    color:rgba(255, 255, 255, 0.742);
+}
+
+@media (max-width: 575.98px) {
+    .navbar{
+        position: absolute;
+        width:100%;
+    }
+    .navbar-nav {
+        padding-top:10px;
+        /* position: fixed; */
+        /* bottom: 0px;
+        bottom: -10%; */
+        /* opacity: 1; */
+        /* bottom:-50vh;  */
+        /* margin-top:110px; */
+        /* left: 0px; */
+        flex-direction: row;
+        width: 99%;
+        height:80px;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        transition: all 0.3s ease-in-out;
+        
+        
+      }
+      .nav-item{
+        /* position: absolute; */
+        /* bottom:0px; */
+      }
+      .btn-primary{
+        position: absolute;
+        top:30px;
+        /* bottom:0px */
+        right:0px;
+      }
+      .scrolled-down{
+        transform:translateY(-100%); transition: all 0.3s ease-in-out;
+      }
+      .scrolled-up{
+        transform:translateY(0); transition: all 0.3s ease-in-out;
+      }
+    
+    
+}

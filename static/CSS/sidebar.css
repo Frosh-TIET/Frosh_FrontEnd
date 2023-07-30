@@ -157,6 +157,36 @@ backdrop-filter: blur(8.2px);
     
   }
 
+
+  #register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Istok Web';
+    top: 56%;
+    left: 9%;
+    width: 30%;
+    height: 2.5em;
+    font-weight: 10px;
+    background: #7240ce;
+    /* border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px); */
+    /* border: 0.25px solid rgba(150, 150, 150, 0.5); */
+    color: white;
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    /* padding:20px; */
+    border-radius: 10px;
+    font-size: 1.5rem;
+    letter-spacing:1px;
+    /* border:white solid 2px; */
+}
+
+
   @media (max-width: 575.98px) { 
     .toggle__menu-open {
       /* position: absolute; */
@@ -205,19 +235,27 @@ backdrop-filter: blur(8.2px);
 }
 
 #register {
-  width: 68%!important;
+  /* width: 68%!important; */
   font-size:1.2rem!important;
+  z-index:4;
+  transition-timing-function:4s;
+  /* position:sticky; */
 }
 
 
-  #register{
-    top: 53%!important;;
-  } 
 
   video{
     position:absolute;
     /* top:1%; */
   }
+  #logo {
+    position: absolute;
+    width: 160px;
+    top: 29px;
+    left: 1.8rem;
+    /* display: flex; */
+}
+
 }
 
 
@@ -255,33 +293,6 @@ backdrop-filter: blur(8.2px);
   }
 
  
-  #register {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    font-family: 'Istok Web';
-    top: 56%;
-    left: 9%;
-    width: 30%;
-    height: 2.5em;
-    font-weight: 10px;
-    background: #7240ce;
-    /* border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.7px);
-    -webkit-backdrop-filter: blur(6.7px); */
-    /* border: 0.25px solid rgba(150, 150, 150, 0.5); */
-    color: white;
-    text-align: center;
-    padding-top: auto;
-    padding-bottom: auto;
-    /* padding:20px; */
-    border-radius: 10px;
-    font-size: 1.5rem;
-    letter-spacing:1px;
-    /* border:white solid 2px; */
-}
 
 
 

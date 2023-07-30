@@ -820,16 +820,25 @@ footer {
 
 .inner-container-2:hover {
   background-image: url(../Images/start3.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* background-color: #fff; */
 }
 
 .inner-container-3:hover {
   background-image: url(../Images/start2.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* background-color: #fff; */
 }
 
 .inner-container-4:hover {
   background-image: url(../Images/start4.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* background-color: #fff; */
 }
 
@@ -973,6 +982,28 @@ section .start_section {
   section {
     height: 100vh;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .inner-container .inner-inner-container {
     width: 70%;
     margin: auto;
@@ -983,7 +1014,7 @@ section .start_section {
     display: none;
   }
   .top-section h1 {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     text-align: center;
   }
   .top-section p {
@@ -1107,4 +1138,40 @@ section .start_section {
 
 h1,h2,h3,h4,h5,h6{
   font-family: nhm3 !important; 
+}
+
+
+
+
+
+.wss .cont {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.wss-box {
+  width:29%;
+  height:12rem;
+  background-color: BLACK;
+  color:white;
+  text-align:center;  
+  border:solid 0.5px white;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  font-size:2rem;
+  border-radius: 16px;;
+}
+
+@media (max-width: 576px) {
+  .wss .cont {
+      flex-direction: column;
+      /* width:80%; */
+  }
+  .wss-box {
+    width:80%;
+    margin-bottom:50px;
+  }
 }

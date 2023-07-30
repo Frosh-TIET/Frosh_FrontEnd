@@ -148,14 +148,15 @@ else  {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const el = document.querySelector('#spacing');
-  if (window.innerWidth < 576) {
-    el.style.height = '900px';
-  //   el.style.top = '-10%';
-    // el.style.opacity = '0';
-  }
-  });
+// document.addEventListener('DOMContentLoaded', function() {
+//   const el = document.querySelector('#spacing');
+//   var win=window.innerHeight;
+//   if (window.innerWidth < 576) {
+//     el.style.height = win;
+//   //   el.style.top = '-10%';
+//     // el.style.opacity = '0';
+//   }
+//   });
 
 
 

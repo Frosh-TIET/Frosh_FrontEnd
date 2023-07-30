@@ -1,6 +1,6 @@
 @font-face {
   font-family: nhm3;
-  src: url("Nohemi-SemiBold.otf");
+  src: url("/static/fonts/Nohemi-SemiBold");
 }
 
 * {
@@ -254,6 +254,9 @@ backdrop-filter: blur(8.2px);
     top: 29px;
     left: 1.8rem;
     /* display: flex; */
+}
+#spacing {
+  height:900px;
 }
 
 }

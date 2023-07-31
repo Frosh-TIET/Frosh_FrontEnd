@@ -157,7 +157,7 @@
     font-family: nhm3;
   }
 
-  #core .cards:nth-child(2n) .card__heading {
+  /* #core .cards:nth-child(2n) .card__heading {
     color: rgb(253, 198, 253);
     font-family: nhm3;
   }
@@ -168,6 +168,6 @@
   #core .cards:nth-child(4n) .card__heading {
     color: rgb(255, 99, 255)!important;
     font-family: nhm3;
-  }
+  } */
 
 

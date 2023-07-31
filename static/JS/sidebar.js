@@ -180,25 +180,23 @@ else  {
       // Add more style changes as needed
       element.textContent="Register";
     } else if (window.innerWidth < 576 && window.scrollY < 424) {
+      element.innerHTML="Register for our Event";
       // Apply a different set of styles when the user has scrolled back to the top and the width is less than 576px
       element.style.position = 'absolute'; // Change this line to apply the new desired style
       element.style.top = '53%'; // Change this line to apply the new desired style
       element.style.width = '68%';
       // Add more style changes as needed for the "scrolled back to top" state
-      element.textContent="Register for our Event";
+      
     } else {
       // Reset the style when the condition is not met
       element.style.position = 'absolute'; // Reset the background color
-      element.style.top = '56%';
+      element.style.top = '54%';
       element.style.width='30%';// Reset the text color
-      // Reset other styles as needed
+    
     }
   };
   window.addEventListener('DOMContentLoaded', changeElementStyle);
   window.addEventListener('resize', changeElementStyle);
-
-
-  // Add event listener for the scroll event
   window.addEventListener('scroll', changeElementStyle);
 
   // Call the function once on page load to check the initial state
@@ -220,6 +218,7 @@ else  {
 
 //   }
 // });
+
 window.addEventListener('load', () => {
   const loadingOverlay = document.querySelector('.loading-overlay');
   loadingOverlay.style.display = 'none';

@@ -163,13 +163,11 @@ else  {
 
   function changeElementStyle() {
     const element = document.getElementById('register'); // Replace 'your-element-id' with the ID of the element you want to style
-    if (browserInfo.includes('Safari') && window.innerWidth<576) {
+    if (browserInfo.includes('Safari') && window.innerWidth<576 && window.scrollY < 424) {
       element.style.position = 'absolute'; // Change this line to apply the new desired style
-      element.style.top = '57%'; // Change this line to apply the new desired style
+      element.style.top = '54%'; // Change this line to apply the new desired style
       element.style.width = '68%';
     }
-    
-    
     else if (window.innerWidth < 576 && window.scrollY >= 424) {
       // Change the style of the element when the user has scrolled one viewport and the width is less than 576px
       element.style.position = 'fixed'; // Change this line to apply the desired style
@@ -192,37 +190,39 @@ else  {
       // Reset other styles as needed
     }
   }
+  window.addEventListener('DOMContentLoaded', changeElementStyle);
+  window.addEventListener('resize', changeElementStyle);
+
 
   // Add event listener for the scroll event
   window.addEventListener('scroll', changeElementStyle);
 
+
   // Call the function once on page load to check the initial state
-  changeElementStyle();
+  // changeElementStyle();
 
 
   // Lock the screen orientation to "portrait-primary" when the page loads
-screen.orientation.lock("portrait-primary");
+// screen.orientation.lock("portrait-primary");
 
 
-document.addEventListener("DOMContentLoaded",function () {
-  if (window.innerwidth<576 && window.scrollY<424){
-      element.style.position = 'absolute'; // Change this line to apply the new desired style
-      element.style.top = '53%'; // Change this line to apply the new desired style
-      element.style.width = '68%';
-      // Add more style changes as needed for the "scrolled back to top" state
-      element.textContent="Register for our Event";
+// document.addEventListener("DOMContentLoaded",function () {
+//   if (window.innerwidth<576 && window.scrollY<424){
+//       element.style.position = 'absolute'; // Change this line to apply the new desired style
+//       element.style.top = '53%'; // Change this line to apply the new desired style
+//       element.style.width = '68%';
+//       // Add more style changes as needed for the "scrolled back to top" state
+//       element.textContent="Register for our Event";
 
-  }else if (window.innerwidth>576){
-    element.style.position = 'absolute'; // Reset the background color
-    element.style.top = '53%';
-    element.style.width='30%';
+//   }else if (window.innerwidth>576){
+//     element.style.position = 'absolute'; // Reset the background color
+//     element.style.top = '53%';
+//     element.style.width='30%';
 
-  }
-})
+//   }
+// });
 
-if (browserInfo.includes('Safari')) {
-  
-}
+
 
 
 

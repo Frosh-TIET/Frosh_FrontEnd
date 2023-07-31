@@ -163,7 +163,14 @@ else  {
 
   function changeElementStyle() {
     const element = document.getElementById('register'); // Replace 'your-element-id' with the ID of the element you want to style
-    if (window.innerWidth < 576 && window.scrollY >= 424) {
+    if (browserInfo.includes('Safari') && window.innerWidth<576) {
+      element.style.position = 'absolute'; // Change this line to apply the new desired style
+      element.style.top = '57%'; // Change this line to apply the new desired style
+      element.style.width = '68%';
+    }
+    
+    
+    else if (window.innerWidth < 576 && window.scrollY >= 424) {
       // Change the style of the element when the user has scrolled one viewport and the width is less than 576px
       element.style.position = 'fixed'; // Change this line to apply the desired style
       element.style.top= '50px'; // Change this line to apply the desired style
@@ -212,6 +219,10 @@ document.addEventListener("DOMContentLoaded",function () {
 
   }
 })
+
+if (browserInfo.includes('Safari')) {
+  
+}
 
 
 

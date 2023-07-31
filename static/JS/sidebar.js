@@ -191,3 +191,25 @@ else  {
 
   // Call the function once on page load to check the initial state
   changeElementStyle();
+
+
+  // Lock the screen orientation to "portrait-primary" when the page loads
+screen.orientation.lock("portrait-primary");
+
+
+document.addEventListener("DOMContentLoaded",function () {
+  if (window.innerwidth<576 && window.scrollY<424){
+      element.style.position = 'absolute'; // Change this line to apply the new desired style
+      element.style.top = '53%'; // Change this line to apply the new desired style
+      element.style.width = '68%';
+      // Add more style changes as needed for the "scrolled back to top" state
+      element.textContent="Register for our Event";
+
+  }else if (window.innerwidth>576){
+    element.style.position = 'absolute'; // Reset the background color
+    element.style.top = '53%';
+    element.style.width='30%';
+
+  }
+})
+

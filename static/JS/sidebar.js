@@ -162,6 +162,10 @@ else  {
 
 
   function changeElementStyle() {
+    const getBrowserName = () => {
+      let browserInfo = navigator.userAgent;
+      let browser;
+
     const element = document.getElementById('register'); // Replace 'your-element-id' with the ID of the element you want to style
     if (browserInfo.includes('Safari') && window.innerWidth<576 && window.scrollY < 424) {
       element.style.position = 'absolute'; // Change this line to apply the new desired style

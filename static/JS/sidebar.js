@@ -160,12 +160,12 @@ else  {
 
 
 
+  let browserInfo = navigator.userAgent;
+  let browser;
+
 
   function changeElementStyle() {
-    const getBrowserName = () => {
-      let browserInfo = navigator.userAgent;
-      let browser;
-
+   
     const element = document.getElementById('register'); // Replace 'your-element-id' with the ID of the element you want to style
     if (browserInfo.includes('Safari') && window.innerWidth<576 && window.scrollY < 424) {
       element.style.position = 'absolute'; // Change this line to apply the new desired style
@@ -193,7 +193,7 @@ else  {
       element.style.width='30%';// Reset the text color
       // Reset other styles as needed
     }
-  }
+  };
   window.addEventListener('DOMContentLoaded', changeElementStyle);
   window.addEventListener('resize', changeElementStyle);
 
@@ -201,15 +201,10 @@ else  {
   // Add event listener for the scroll event
   window.addEventListener('scroll', changeElementStyle);
 
-
   // Call the function once on page load to check the initial state
   // changeElementStyle();
-
-
   // Lock the screen orientation to "portrait-primary" when the page loads
 // screen.orientation.lock("portrait-primary");
-
-
 // document.addEventListener("DOMContentLoaded",function () {
 //   if (window.innerwidth<576 && window.scrollY<424){
 //       element.style.position = 'absolute'; // Change this line to apply the new desired style
@@ -225,8 +220,7 @@ else  {
 
 //   }
 // });
-
-
-
-
-
+window.addEventListener('load', () => {
+  const loadingOverlay = document.querySelector('.loading-overlay');
+  loadingOverlay.style.display = 'none';
+});

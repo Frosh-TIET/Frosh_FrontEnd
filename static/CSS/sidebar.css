@@ -1101,6 +1101,10 @@ section .start_section {
     font-size: 1.4em;
   }
 
+  .typed-cursor {
+    opacity:0!important;
+  }
+
   .menu-items[data-visible="true"] {
     transform: translateX(0%);
   }
@@ -1171,7 +1175,7 @@ h1,h2,h3,h4,h5,h6{
       /* width:80%; */
   }
   .wss-box {
-    width:80%;
+    width:90%;
     margin-bottom:50px;
   }
 }

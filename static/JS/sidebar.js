@@ -17,8 +17,8 @@ var typed3 = new Typed('#typed', {
   backDelay: 100,
   smartBackspace: true,
   loop: true,
-  cursorChar: '|',
-  showCursor: true,
+  // cursorChar: '|',
+  // showCursor: true,
 });
 
 updateTypedStrings(); // Call the function once on page load
@@ -180,7 +180,7 @@ else  {
     } else {
       // Reset the style when the condition is not met
       element.style.position = 'absolute'; // Reset the background color
-      element.style.top = '53%';
+      element.style.top = '56%';
       element.style.width='30%';// Reset the text color
       // Reset other styles as needed
     }

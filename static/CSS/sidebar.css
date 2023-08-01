@@ -11,6 +11,11 @@
 
 }
 
+.typed-cursor{
+  opacity:0;
+  /* color:red; */
+}
+
 body {
   background-color: rgb(11,7,9);
   overflow-x: hidden;
@@ -228,7 +233,17 @@ backdrop-filter: blur(8.2px);
       transition: all 0.3s ease-in-out;
     }
 
+    .tooltip {
+      top:0px;
+      left:0px;
+      /* opacity:1; */
+      width:40px;
+    }
+    #about1 .tooltip  {
+      background-color: black;
 
+    }
+    
 
 #typed{
   font-size:1.9rem!important;

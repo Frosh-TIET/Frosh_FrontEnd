@@ -61,7 +61,7 @@ video.addEventListener('timeupdate', function() {
 
 
 
-const navItems = document.querySelectorAll('a');
+const navItems = document.querySelectorAll('svg');
 
 const toolTips = document.querySelectorAll('.tooltip');
 

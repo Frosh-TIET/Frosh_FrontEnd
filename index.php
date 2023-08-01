@@ -1,2 +1,3 @@
 <?php
-virtual('./templates/index.html');
+header("Location: /templates/index.html");
+die();

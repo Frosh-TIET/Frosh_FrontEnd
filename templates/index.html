@@ -15,7 +15,9 @@
 </head>
 
 <body>
-
+  <div class="loading-overlay">
+    <img src="/static/loader.gif" style="width:90vw; max-width: 400px;">
+  </div>
 
   <div class="home">
 
@@ -25,13 +27,9 @@
   </div>
   <img src="/static/froshlogo.png" id="logo">
   <span id="typed"></span>
-  <div id="register">Register for our Events!</div>
+  <div id="register">Register for Events</div>
   <div class="toggle__menu-open" onclick="toggleMenu()">
-    <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M34.1389 21.0951C35.1054 21.0951 35.8889 21.8786 35.8889 22.8451C35.8889 23.8116 35.1054 24.5951 34.1389 24.5951H2.63892C1.67242 24.5951 0.888916 23.8116 0.888916 22.8451C0.888916 21.8786 1.67242 21.0951 2.63892 21.0951H34.1389ZM34.1389 10.5951C35.1054 10.5951 35.8889 11.3786 35.8889 12.3451C35.8889 13.3116 35.1054 14.0951 34.1389 14.0951H2.63892C1.67242 14.0951 0.888916 13.3116 0.888916 12.3451C0.888916 11.3786 1.67242 10.5951 2.63892 10.5951H34.1389ZM34.1389 0.0950928C35.1054 0.0950928 35.8889 0.878594 35.8889 1.84509C35.8889 2.81159 35.1054 3.59509 34.1389 3.59509H2.63892C1.67242 3.59509 0.888916 2.81159 0.888916 1.84509C0.888916 0.878594 1.67242 0.0950928 2.63892 0.0950928H34.1389Z"
-        fill="white" />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
 
   </div>
 
@@ -77,8 +75,8 @@
         </svg>
         <div class="tooltip" data-key="team">Team</div>
       </a>
-      <a href="splitworks.html" id="workshops" class="icons"><svg xmlns="http://www.w3.org/2000/svg"
-          width="25" height="25" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+      <a href="splitworks.html" id="workshops" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+          height="25" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
           <path
             d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
         </svg>
@@ -184,20 +182,11 @@
       </div>
       <div class="line"></div>
     </section>
-    <section class="start_section">
+
+
+    <!-- <section class="start_section">
       <div class="start">
-        <!-- <div class="inner-container inner-container-1">
-        <a href="./events_old.html" class="starter">
-          <div class="inner-inner-container">
-            <div class="top-section">
-              <h1>
-                EVENTS
-              </h1>
-              
-            </div>
-          </div>
-        </a>
-      </div> -->
+       
         <div class="vertical_line"></div>
         <div class="inner-container inner-container-2">
           <a href="./splitworks.html" class="starter">
@@ -206,7 +195,7 @@
                 <h1>
                   WORKSHOPS
                 </h1>
-                <!-- <p>MDCLI</p> -->
+              
               </div>
             </div>
           </a>
@@ -219,7 +208,7 @@
                 <h1>
                   STARTER <br> KIT
                 </h1>
-                <!-- <p>MDCXVII</p> -->
+               
               </div>
             </div>
           </a>
@@ -239,10 +228,21 @@
         </div>
       </div>
       <div class="vertical_line"></div>
+    </section> -->
+
+    <section class="wss">
+      <div class="cont">
+
+        <div class="wss-box inner-container-4" onclick="window.location.replace('')">WORKSHOPS</div>
+        <div class="wss-box  inner-container-2" onclick="window.location.replace('')">STARTER KIT</div>
+        <div class="wss-box  inner-container-3" onclick="window.location.replace('')">SOCIETIES</div>
+
+      </div>
     </section>
-    <div class="line"></div>
-    <section id="team1">
-      <div class="container">
+
+    <!-- <div class="line"></div> -->
+    <!-- <section id="team1"> -->
+    <!-- <div class="container">
         <div class="title">
           <h1>Our Sponsors</h1>
         </div>
@@ -251,28 +251,26 @@
 
 
         </div>
+      </div> -->
+    <div class="box">
+      <div class="item1">
+        <label><a href="/templates/faculty.html"></a></label>
+        <!-- <p>"The guiding stars, illuminating our path to success and providing unwavering support as we navigate the challenges ahead."</p> -->
       </div>
-      <div class="box">
-        <div class="item1">
-          <label><a href="/templates/faculty.html"></a></label>
-          <!-- <p>"The guiding stars, illuminating our path to success and providing unwavering support as we navigate the challenges ahead."</p> -->
-        </div>
-        <div class="item1">
-          <!-- <label><img src=""/label> -->
-          <!-- <p>An English-born American computer scientist, essayist, entrepreneur, venture capitalist.</p> -->
-        </div>
-        <div class="item1">
-          <!-- <p>An American singer, songwriter, and dancer. One of the most significant cultural figures of the 20th century</p> -->
-        </div>
+      <div class="item1">
+        <!-- <label><img src=""/label> -->
       </div>
-      <div class="line"></div>
+      <div class="item1">
+      </div>
+    </div>
+    <div class="line"></div>
   </div>
   <div class="line"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <div class="header" id="header"></div>
+  <div class="footer" id="footer"></div>
   <script>
     $(function () {
-      $("#header").load("./footer.html");
+      $("#footer").load("/templates/footer.html");
     }); 
   </script>
 

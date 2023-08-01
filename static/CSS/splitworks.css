@@ -9,9 +9,11 @@
   font-family: nhm1;
   src: url('/fonts/Nohemi-Medium.otf');
 }
+
 * {
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
 }
@@ -42,7 +44,7 @@ body {
     flex-direction: row;
   }
 }
-.card {
+.cards {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,17 +53,19 @@ body {
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: whitesmoke;
+  /* color: rgba(255, 255, 255, 0.984); */
+  color:white;
   background-color: whitesmoke;
   font-family: nhm1 ;
+  filter:brightness(0.7);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
-  .card {
+  .cards {
     height: 350px;
   }
 }
-.card:before {
+.cards:before {
   content: '';
   position: absolute;
   flex-direction: column;
@@ -74,7 +78,7 @@ body {
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
-.card:after {
+.cards:after {
   content: '';
   display: block;
   position: absolute;
@@ -88,10 +92,10 @@ body {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
-.card:nth-child(1):before {
+.cards:nth-child(1):before {
   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Girl-dancing-wallpaper-music-vector-colorful.jpg);
 }
-.card:nth-child(2):before {
+.cards:nth-child(2):before {
   background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
 }
 .content {
@@ -113,12 +117,12 @@ body {
   line-height: 1.2;
 }
 .copy {
-  font-family: var(--font-serif);
+  font-family: 'Istok Web';
   font-size: 1.125rem;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 1.35;
 }
-.btn {
+.btns {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
@@ -130,15 +134,15 @@ body {
   background-color: white;
   border: none;
 }
-.btn:hover {
+.btns:hover {
   background-color:whitesmoke;
 }
-.btn:focus {
+.btns:focus {
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
 @media (hover: hover) and (max-width: 575.98px) {
-  .card:after {
+  .cards:after {
     transform: translateY(0);
   }
   .content {
@@ -149,24 +153,24 @@ body {
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
   }
-  .card:hover, .card:focus-within {
+  .cards:hover, .cards:focus-within {
     align-items: center;
   }
-  .card:hover:before, .card:focus-within:before {
+  .cards:hover:before, .cards:focus-within:before {
     transform: translateY(-4%);
   }
-  .card:hover:after, .card:focus-within:after {
+  .cards:hover:after, .cards:focus-within:after {
     transform: translateY(-50%);
   }
-  .card:hover .content, .card:focus-within .content {
+  .cards:hover .content, .cards:focus-within .content {
     transform: translateY(0);
   }
-  .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
+  .cards:hover .content > *:not(.title), .cards:focus-within .content > *:not(.title) {
     opacity: 1;
     transform: translateY(0);
     transition-delay: calc(var(--d) / 8);
   }
-  .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
+  .cards:focus-within:before, .cards:focus-within:after, .cards:focus-within .content, .cards:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
 }

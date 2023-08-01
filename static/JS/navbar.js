@@ -41,3 +41,35 @@ document.addEventListener('click', function (event) {
     // if
   
   }); 
+
+
+const navItems = document.querySelectorAll('.nav-item a');
+
+const toolTips = document.querySelectorAll('.tooltip');
+
+function addToolTip(key) {
+removeTooltips();
+toolTips.forEach((tooltip) => {
+if (tooltip.getAttribute('data-key') == key) {
+  tooltip.style.opacity = '1';
+}
+});
+}
+
+function removeTooltips() {
+toolTips.forEach((tooltip) => {
+tooltip.style.opacity = '0';
+});
+}
+
+navItems.forEach((item) => {
+item.addEventListener('mouseover', () => {
+addToolTip(item.getAttribute('id'));
+});
+});
+
+navItems.forEach((item) => {
+item.addEventListener('mouseleave', () => {
+removeTooltips();
+});
+});

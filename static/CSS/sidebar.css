@@ -1268,7 +1268,9 @@ h6 {
   justify-content: space-around;
   align-content: center;
 }
-
+.wss:hover {
+  cursor: pointer;
+}
 .wss-box {
   width: 29%;
   height: 12rem;

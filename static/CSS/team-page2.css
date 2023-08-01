@@ -1,0 +1,152 @@
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+@font-face {
+    font-family: nhm3;
+    src: url("/fonts/Nohemi-Bold.otf");
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: nhm3;
+    font-size: 9px;
+}
+
+body {
+    height: 100%;
+}
+
+.team_role {
+    margin-top: 4px;
+    margin-bottom:80px;
+    align-items: center;        
+}
+
+.hero-section {
+    flex-direction: row;
+
+    align-items: center;
+    background: url("/static/back.gif");
+    /* background-size: ; */
+    display: flex;
+    min-height: 100%;
+    font-size: 10;
+    font-family: nhm3;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: auto;
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+    justify-items: center;
+    /* Add the following line to center the cards vertically */
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .card-grid {
+        grid-template-columns: repeat(5, 0.8fr);
+    }
+
+    #core,
+    #osc {
+        grid-template-columns: repeat(4, 0.8fr);
+    }
+}
+
+.cards {
+    list-style: none;
+    position: relative;
+    width: 85%;
+    margin-top: 30px;
+}
+
+@media (min-width: 960px) {
+    .cards-faculty {
+        width: 105% !important;
+    }
+}
+
+.cards:before {
+    content: '';
+    display: block;
+    padding-bottom: 140%;
+    width: 100%;
+    color: aliceblue;
+}
+
+.card__background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    /* filter:grayscale(90%); */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.cards:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card__content {
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+}
+
+.team_role {
+    font-size: 6em;
+    z-index: 5;
+    color: white;
+}
+
+.card__heading {
+    font-family: nhm3;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    /* word-spacing: 70vw; */
+}
+
+#osc {
+    margin: auto 0;
+    font-family: nhm3;
+}

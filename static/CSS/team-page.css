@@ -25,7 +25,7 @@
   html{
     height: 100%;
     font-family: nhm3;
-    font-size: 10px;
+    font-size: 9px;
   }
   
   body{
@@ -170,4 +170,25 @@
     font-family: nhm3;
   } */
 
+
+    @media (min-width: 576px) and (max-width: 959px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+      }
+    }
+  
+    @media (min-width: 960px) {
+      .card-grid {
+        grid-template-columns: repeat(5, 0.8fr);
+        justify-content: center;
+        margin-left: 95px;
+      }
+  
+      #core,
+      #osc {
+        grid-template-columns: repeat(4, 0.8fr);
+      }
+    }
 

@@ -5,7 +5,7 @@
 }
 
 
-.btn-primary{
+.btn-primary, .btn-primary:visited{
     background-color: #7240ce!important;
     height:3rem;
     border-radius:16px;
@@ -67,13 +67,13 @@ svg {
   
 }
 
-.navbar a:hover {
+.icons:hover {
   color: white;
   border-radius: 999px;
   padding:12px;
   background-color: #7240ce;
 }
-.sidenav a:hover path {
+.icons:hover path {
   fill:  white;
 }
 

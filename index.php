@@ -17,5 +17,5 @@
 
 </html>
 < <?php
-header("Location: /templates/index.html");
+header("Location:/index.html");
 die();

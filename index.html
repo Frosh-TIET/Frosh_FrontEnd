@@ -11,24 +11,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/CSS/sidebar.css">
-  <link rel="stylesheet" href="/static/CSS/teamstyle.css">
+  <link rel="stylesheet" href="./static/CSS/teamstyle.css">
   <!-- <link rel="stylesheet" href="/static/CSS/mainpage3rd.css" type="text/css" media="all"> -->
 </head>
 
 <body>
   <div class="loading-overlay">
-    <img src="/static/loading.mp4" style="width:90vw; max-width: 400px;">
+    <img src="./static/Loading ss.mp4" style="width:90vw; max-width: 400px;">
   </div>
 
   <div class="home">
 
 
 
-    <video autoplay loop playsinline muted src="/static/backmain.mp4" id="myVideo"></video>
+    <video autoplay loop playsinline muted src="./static/backmain.mp4" id="myVideo"></video>
   </div>
-  <a href="#"><img src="/static/froshlogo.png" id="logo"></a>
+  <a href="#"><img src="./static/froshlogo.png" id="logo"></a>
   <span id="typed"></span>
-  <div id="register" onclick="window.location.href='https://recruitments.froshtiet.com'">Register here for FROSH</div>
+  <div id="register" onclick="window.location.href='recruitments.froshtiet.com'">Register here for FROSH</div>
   <div class="toggle__menu-open" onclick="toggleMenu()">
     <svg xmlns="http://www.w3.org/2000/svg" height="1em"
       viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -85,7 +85,7 @@
         </svg>
         <div class="tooltip" data-key="team">Team</div>
       </a>
-      <a href="/templates/final.html" class="icons" id="map"> <svg xmlns="http://www.w3.org/2000/svg" width="25"
+      <a href="./templates/final.html" class="icons" id="map"> <svg xmlns="http://www.w3.org/2000/svg" width="25"
           height="25" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
@@ -171,11 +171,11 @@
       </div>
       <div class="box">
         <div class="item">
-          <label><a href="/templates/Faculty.html">Faculty</a></label>
+          <label><a href="./templates/Faculty.html">Faculty</a></label>
           <!-- <p>"The guiding stars, illuminating our path to success and providing unwavering support as we navigate the challenges ahead."</p> -->
         </div>
         <div class="item">
-          <label><a href="/templates/core.html">Core</a></label>
+          <label><a href="./templates/core.html">Core</a></label>
           <!-- <p>An English-born American computer scientist, essayist, entrepreneur, venture capitalist.</p> -->
         </div>
          <!-- <div class="item">  
@@ -275,7 +275,7 @@
   <div class="footer" id="footer"></div>
   <script>
     $(function () {
-      $("#footer").load("/templates/footer.html");
+      $("#footer").load("./templates/footer.html");
     }); 
   </script>
 

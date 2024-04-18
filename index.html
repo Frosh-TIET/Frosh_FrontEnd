@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frosh 24</title>
+  <meta name="description" content="Blazing through infinite realms!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/CSS/sidebar.css">
+  <link rel="stylesheet" href="/static/CSS/teamstyle.css">
+  <!-- <link rel="stylesheet" href="/static/CSS/mainpage3rd.css" type="text/css" media="all"> -->
+</head>
+
+<body>
+  <div class="loading-overlay">
+    <img src="/static/loader.gif" style="width:90vw; max-width: 400px;">
+  </div>
+
+  <div class="home">
+
+
+
+    <video autoplay loop playsinline muted src="/static/backmain.mp4" id="myVideo"></video>
+  </div>
+  <a href="#"><img src="/static/froshlogo.png" id="logo"></a>
+  <span id="typed"></span>
+  <div id="register" onclick="window.location.href='https://recruitments.froshtiet.com'">Register here for FROSH</div>
+  <div class="toggle__menu-open" onclick="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+      viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+      <style>
+        svg {
+          fill: #ffffff
+        }
+      </style>
+      <path
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+
+  </div>
+
+  <div class="toggle__menu-close" onclick="toggleMenu()">
+    <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d)">
+        <circle cx="43.1122" cy="40.25" r="27.3569" fill="white" />
+        <circle cx="43.1122" cy="40.25" r="26.8569" stroke="white" />
+      </g>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M46.7879 40.2502L54.4173 32.6208C54.9809 32.0572 54.9809 31.1462 54.4173 30.5826C53.8538 30.019 52.9428 30.019 52.3792 30.5826L44.7497 38.2121L37.1203 30.5826C36.5567 30.019 35.6457 30.019 35.0821 30.5826C34.5185 31.1462 34.5185 32.0572 35.0821 32.6208L42.7116 40.2502L35.0821 47.8797C34.5185 48.4433 34.5185 49.3542 35.0821 49.9178C35.3632 50.1989 35.7322 50.3402 36.1012 50.3402C36.4702 50.3402 36.8392 50.1989 37.1203 49.9178L44.7497 42.2884L52.3792 49.9178C52.6603 50.1989 53.0293 50.3402 53.3983 50.3402C53.7673 50.3402 54.1363 50.1989 54.4173 49.9178C54.9809 49.3542 54.9809 48.4433 54.4173 47.8797L46.7879 40.2502Z"
+        fill="#5F4EFA" />
+      <defs>
+        <filter id="filter0_d" x="0.755249" y="0.893066" width="84.7139" height="84.7139" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feMorphology radius="5" operator="erode" in="SourceAlpha" result="effect1_dropShadow" />
+          <feOffset dy="3" />
+          <feGaussianBlur stdDeviation="10" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+
+  </div>
+
+  <nav>
+    <div class="sidenav ">
+      <a href="#about1" id="about" class="icons"> <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+          fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+          <path
+            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
+        </svg>
+        <div class="tooltip" data-key="about">About</div>
+      </a>
+      <a href="#team1" id="team" class="icons"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+          fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+          <path
+            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+        </svg>
+        <div class="tooltip" data-key="team">Team</div>
+      </a>
+      <a href="splitworks.html" id="workshops" class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+          height="25" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+          <path
+            d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
+        </svg>
+        <div class="tooltip" data-key="workshops">Workshops</div>
+      </a>
+      <a href="/templates/final.html" class="icons" id="map"> <svg xmlns="http://www.w3.org/2000/svg" width="25"
+          height="25" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
+        </svg>
+        <div class="tooltip" data-key="map">Map</div>
+      </a>
+    </div>
+  </nav>
+  <div id="spacing"></div>
+
+
+  <div id="starry">
+    <section class="our_identity" id="about1">
+      <div class="identity-container">
+        <div class="frosh-heading">
+          <span>F</span>
+          <span>R</span>
+          <span>O</span>
+          <span>S</span>
+          <span>H</span>
+        </div>
+        <div class="identity-content">
+          <div class="text">
+            <h4>Family</h4>
+            <p>
+              Frosh aims to build a sense of faith; family amongst the three
+              pillars holding an institute together with the faculty, the
+              seniors, and the freshers.
+            </p>
+          </div>
+          <div class="text">
+            <h4>Reliable</h4>
+            <p>
+              Frosh provides a reliable support system to hold your hand through
+              the tough times that one might face.
+            </p>
+          </div>
+          <div class="text">
+            <h4>Optimistic</h4>
+            <p>
+              Frosh believes in an optimistic approach while dealing with the
+              challenges one has to face in life.
+            </p>
+          </div>
+          <div class="text">
+            <h4>Spirited</h4>
+            <p>
+              Frosh creates an energetic and spirited environment for the
+              freshers for them to comfortably express their talents.
+            </p>
+          </div>
+          <div class="text">
+            <h4>Humble</h4>
+            <p>
+              Frosh lays out a humble atmosphere for the freshers to approach
+              them without hesitation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
+    <section id="team1">
+      <div class="container">
+        <div class="title">
+          <h1>Our Team</h1>
+        </div>
+        <div class="right-side">
+          <p class="team">
+            A productive environment is created by carrying out these duties with the utmost energy and motivation each
+            day resulting in the formation of a close-knit team. A team always succeeds in reaching its goal when all
+            members work in cooperation to complete their allocated tasks.
+            <br>
+            By planning several events for the freshmen's acclimatization to the new environment, including both
+            technical
+            and non-technical skills, FROSH 2024, a team of 20 students, hopes to help the freshmen make a smooth
+            transition from their school life to the college habits.
+          </p>
+
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="item">
+          <label><a href="/templates/Faculty.html">Faculty</a></label>
+          <!-- <p>"The guiding stars, illuminating our path to success and providing unwavering support as we navigate the challenges ahead."</p> -->
+        </div>
+        <div class="item">
+          <label><a href="/templates/core.html">Core</a></label>
+          <!-- <p>An English-born American computer scientist, essayist, entrepreneur, venture capitalist.</p> -->
+        </div>
+         <!-- <div class="item">  
+          <label><a href="/templates/team.html">Mentor</a></label>
+          <!-- <p>An American singer, songwriter, and dancer. One of the most significant cultural figures of the 20th century</p> -->
+        <!-- </div>  -->
+      </div>
+      <div class="line"></div>
+    </section>
+
+
+    <!-- <section class="start_section">
+      <div class="start">
+       
+        <div class="vertical_line"></div>
+        <div class="inner-container inner-container-2">
+          <a href="./splitworks.html" class="starter">
+            <div class="inner-inner-container">
+              <div class="top-section">
+                <h1>
+                  WORKSHOPS
+                </h1>
+              
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="inner-container inner-container-3">
+          <a href="./Starter_Kit.html" class="starter">
+            <div class="inner-inner-container">
+              <div class="top-section">
+                <h1>
+                  STARTER <br> KIT
+                </h1>
+               
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="vertical_line"></div>
+        <div class="inner-container inner-container-4">
+          <a href="societies.html" class="starter">
+            <div class="inner-inner-container">
+              <div class="top-section">
+                <h1>
+                  SOCIETIES
+                </h1>
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="vertical_line"></div>
+    </section> -->
+
+    <!-- <section class="wss">
+      <div class="cont">
+
+        <div class="wss-box inner-container-4" onclick="window.location.replace('/templates/splitworks.html')">WORKSHOPS
+        </div>
+        <div class="wss-box  inner-container-2" onclick="window.location.replace('/templates/Starter_Kit.html')">STARTER
+          KIT</div>
+         <div class="wss-box  inner-container-3" onclick="window.location.replace('/templates/societies.html')">SOCIETIES</div> -->
+
+      <!-- </div> -->
+    <!-- </section>  -->
+
+    <!-- <div class="line"></div> -->
+    <!-- <section id="team1"> -->
+    <!-- <div class="container">
+        <div class="title">
+          <h1>Our Sponsors</h1>
+        </div>
+        <div class="hello">
+          <h2 id="title-sponsor">Title Sponsors</h2>
+
+
+        </div>
+      </div> -->
+    <!-- <div class="box">
+      <div class="item1">
+        <label><a href="/templates/faculty.html"></a></label>
+        <!-- <p>"The guiding stars, illuminating our path to success and providing unwavering support as we navigate the challenges ahead."</p> -->
+      <!-- </div> -->
+      <!-- <div class="item1">
+        <!-- <label><img src=""/label> -->
+      <!-- </div> --> 
+      <!-- <div class="item1">
+      </div>
+    </div>
+    <div class="line"></div>
+  </div> -->
+  <div class="line"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <div class="footer" id="footer"></div>
+  <script>
+    $(function () {
+      $("#footer").load("/templates/footer.html");
+    }); 
+  </script>
+
+
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.4/smooth-scrollbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script src="/static/JS/index.js"></script>
+  <script src="/static/JS/sidebar.js"></script>
+  <script src="/static/JS/mainpage4th.js"></script>
+
+</body>
+
+</html>

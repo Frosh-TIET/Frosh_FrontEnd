@@ -65,6 +65,20 @@ body {
     justify-content: center;
 }
 
+
+.card-grid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: auto;
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+    justify-items: center;
+    /* Add the following line to center the cards vertically */
+    justify-content: center;
+}
+
 @media (min-width: 576px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -79,8 +93,10 @@ body {
     #core,
     #osc {
         grid-template-columns: repeat(4, 0.8fr);
+
     }
 }
+
 
 .cards {
     list-style: none;

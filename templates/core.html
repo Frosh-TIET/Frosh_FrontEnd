@@ -4,15 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code | Frosh'23</title>
+  <title>Core | Frosh'24</title>
   <link rel="stylesheet" href="../static/CSS/team-page.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>      
+  <div class="header" id="header"></div>
+  <script>
+      $(function () {
+          $("#header").load("./header.html");
+      }); 
+  </script>
 </head>
 
 <body>
   <section class="hero-section">
     <div class="team_role">OSC</div>
     <br>
-    <div class="card-grid" id="osc">
+
+    <div class="card-grid1" id="osc">
+      <a class="cards1">
+      </a>
       <a class="cards">
         <div class="card__background" style="background-image: url(/static/core-photos/Ananya.jpg)"></div>
         <div class="card__content">
@@ -21,7 +31,7 @@
         </div>
       </a>
       <a class="cards">
-        <div class="card__background" style="background-image: url(/static/core-photos/Swastik.png)"></div>
+        <div class="card__background" style="background-image: url(/static/core-photos/Swastik.jpeg)"></div>
           <div class="card__content">
             <!-- <p class="card__category">Category</p> -->
             <h3 class="card__heading">Swastik Raghav, COE</h3>
@@ -134,7 +144,7 @@
         </div>
       </a>
       <a class="cards">
-        <div class="card__background" style="background-image: url(/static/core-photos/Shreya.jpg)"></div>
+        <div class="card__background" style="background-image: url(/static/core-photos/Shreya.jpeg)"></div>
         <div class="card__content">
           <!-- <p class="card__category">Category</p> -->
           <h3 class="card__heading">Shreya Gakhar, CSBS</h3>
@@ -148,7 +158,7 @@
         </div>
       </a>
       <a class="cards">
-        <div class="card__background" style="background-image: url(/static/core-photos/yashikgarg.jpg)"></div>
+        <div class="card__background" style="background-image: url(/static/core-photos/yashikgarg.jpeg)"></div>
         <div class="card__content">
           <!-- <p class="card__category">Category</p> -->
           <h3 class="card__heading">Yashik Garg,COPC</h3>

@@ -95,6 +95,16 @@
     color: #7240ce;
     text-align : center;
   }
+  .title1 {
+    line-height: 1.2;
+  }
+  .title1 h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: #7240ce;
+    text-align : center;
+  }
   .right-side p {
     font-size: 20px;
     font-weight: 400;
@@ -102,7 +112,7 @@
   }
 
 
-  .center{
+  .center1{
     font-size: 70px;
     font-weight: 400;
     max-width: 600px;
@@ -112,6 +122,9 @@
     justify-content: center;
     align-items: center;
   }
+
+    
+
   .team {
     font-size: 15px;
   }
@@ -407,4 +420,95 @@
     .item {
       left:0px!important;
     }
+  }
+
+
+  @media (max-width: 480px) {
+    .box{
+      flex-direction: column;
+      
+    }
+    .center1 {
+      font-size: unset;
+      margin-left: unset;
+      margin-bottom: unset;
+      display: unset;
+      justify-content: unset;
+      align-items: unset;
+    }
+    .center1 p {
+      font-size: 20px;
+      font-weight: 400;
+      max-width: 600px;
+    }
+    .title1 {
+      line-height: 1.2;
+    }
+    .title1 h1 {
+      font-size:55px;
+      text-transform: capitalize;
+      margin-bottom: 0.5rem;
+      color: #7240ce;
+      text-align : center;
+    }
+  
+    .item {
+      left:0px!important;
+    }
+
+    .parent {
+      flex-direction: column;
+      width:50%;
+      justify-content: center;
+      height:100%;
+    }
+    .docs, .docs1 {
+      width: 50%;
+      height:50%;
+      justify-content: center;
+    }
+    .card123 {
+      margin-bottom: 20px;
+      width:250px;
+      margin-left: 135px;;
+      
+
+    }
+    .card123__content {
+      padding: 30px;
+      background: rgb(5, 6, 45);
+      justify-content: center;
+      border-radius: 17px;
+      width: 100%;
+      height: 100%;
+    }
+    .location{
+      width:150px;
+      margin-top: 23px;
+      margin-left:17px;
+      margin-bottom: auto;
+      margin-right: auto;
+      justify-content: center;
+  
+      transition: transform 0.3s ease-in-out;
+    }
+    .card123__heading{
+      width:160px;
+      margin-top: 15px;
+      margin-left:21px;
+      font-size: 25px;
+  
+      color: #fff;
+      font-family: nhm3;
+      font-weight: heavy;	
+    }
+    .right-side p {
+      font-size: 20px;
+      font-weight: 400;
+      max-width: 600px;
+    }
+    .team {
+      font-size: 15px;
+    }
+  
   }

@@ -2,9 +2,9 @@ function updateTypedStrings() {
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
   if (screenWidth <= 576) {
-    typed3.strings = ['<span class="custom-frosh">FROSH</span>', 'Blazing <br> through Infinite Realms'];
+    typed3.strings = ['<span class="custom-frosh">FROSH</span>', 'Navigating <br>through Timeless Trails'];
   } else {
-    typed3.strings = ['<span class="custom-frosh">FROSH</span>', 'Blazing  through Infinite Realms'];
+    typed3.strings = ['<span class="custom-frosh">FROSH</span>', 'Navigating Through Timeless Trails'];
   }
 
   typed3.reset();
@@ -243,7 +243,8 @@ else  {
 //   }
 // });
 
-window.addEventListener('load', () => {
-  const loadingOverlay = document.querySelector('.loading-overlay');
-  loadingOverlay.style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+      document.getElementById('loading-overlay').style.display = 'none';
+  }, 5000); // 4000ms = 4s
 });

@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$request = $_SERVER['REQUEST_URI'];
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frosh</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-
-<body>
-
-</body>
-
-</html>
-< <?php
-header("Location:/index.html");
-die();
+switch ($request) {
+    case '/home' :
+        require __DIR__ . '/index.html';
+        break;
+    default:
+        http_response_code(404);
+        echo 'Page not found';
+        break;
+}
+?>
